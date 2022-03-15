@@ -11,6 +11,10 @@ The current Russia-Ukraine crisis has had a huge effect on Chelsea Football Club
 
 ```r
 library(magick)
+
+#creating the top stack of the meme
+
+
 top_part_of_meme <- c(image_read("https://imageio.forbes.com/specials-images/imageserve/1186834489/0x0.jpg?format=jpg&width=1200&fit=bounds"))
 
 top_part_of_meme <- image_scale(top_part_of_meme,"x300")
@@ -28,7 +32,7 @@ first_meme <- c(top_part_of_meme, first_text)
 
 first_stack <- image_append(first_meme)
 
-
+#creating the second stack of the meme
 
 
 middle_part_of_meme <- c(image_read("https://img.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2016/06/04/Web-Resampled/2016-06-04/1368864311465001651-kCMG--606x404@wp.com.jpg"))
@@ -45,7 +49,7 @@ second_text <-  image_annotate(second_text, " CHELSEA FC\n DURING THE\n ABRAMOVI
 second_meme <- c(middle_part_of_meme, second_text)
 second_stack<- image_append(second_meme)
 
-
+#creating the last stack of the meme
 
 bottom_part_of_meme <- image_read("https://talksport.com/wp-content/uploads/sites/5/2022/03/GettyImages-1323269785.jpg?strip=all&quality=100&w=960") %>% image_scale(420)
 
@@ -59,9 +63,16 @@ third_text <- image_blank( width = 400,
 third_meme <- c(bottom_part_of_meme, third_text)
 third_stack <- image_append(third_meme)
 
+#putting the meme together
+
 final_meme <- c(first_stack, second_stack, third_stack)
 final_stack <- image_append(final_meme, stack = TRUE)
+
+#output the meme to the console
 print(final_stack)
+
+#output the meme into an image to be displayed outside the code
+
 image_write(final_stack, "my_meme.png")
 
 
