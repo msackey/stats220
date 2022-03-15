@@ -1,12 +1,13 @@
 **Stats 220 - Data Technologies(Assignment 1)**
 
 The meme below was created to using R code. More specifically, the magick package available in the R library.
+The meme plays on the  current meme convention of comparing the life cycle of an issue (often between 3 - 5 stages) and uses images to describe the state of the topic at a particular point.
 
-The meme plays on the a current convention on the internet to compare the life cycle of a range of topics (often between 3 - 5 stages) and uses images to describe the state of the topic at a particular point.
+**On the nature of the meme**
 
-The current Russia-Ukraine crisis has had a huge effect on Chelsea Football Club in the English Preimer league due to its Russian ownership. As a current giant in the football world, the meme compares Chelsea before their Russian ownership and makes a prediction for the  clubs future due to sactions currently imposed by the British government on its the clubs Russian owner.
+The current Russia-Ukraine crisis has had a huge effect on Chelsea Football Club in the English Premier league due to its Russian ownership. As a current giant in the football world, the meme compares Chelsea FC before their Russian ownership and makes a prediction for the  clubs future due to sanctions currently imposed by the British government on its the clubs Russian owner.
 
-*Below is the meme and the R code used to create it*
+***Below is the meme and the R code used to create it.***
 
 ```r
 library(magick)
