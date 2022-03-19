@@ -1,6 +1,7 @@
 # **Stats 220 - Data Technologies(Assignment 1)**
 
-The meme below was created using R code. More specifically, the ```r magick ``` package available in the R library.
+The meme below was created using R code. More specifically, the ```r 
+magick ``` package available in the R library.
 The meme plays on the  current meme convention of comparing the life cycle of an issue (often between 3 - 5 stages) and uses images to describe the state of the topic at a particular point.
 
 **On the nature of the meme**
